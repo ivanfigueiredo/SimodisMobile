@@ -17,7 +17,9 @@ export function Login({navigation}){
     return(
         <View style={styles.container}>
             <Image source={ LogoPNG } style={styles.logo} />
+            <Text style={styles.matricula}>Matricula</Text>
             <Input />
+            <Text style={styles.senha}>Senha</Text>
             <Input />
             <ButtonEnter
                 title='Entrar'
