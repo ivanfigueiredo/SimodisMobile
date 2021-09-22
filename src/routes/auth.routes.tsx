@@ -4,6 +4,8 @@ import { theme } from "../global/styles/theme";
 
 import { Home } from "../Screens/Home";
 import { Login } from "../Screens/Login";
+import { Questions } from "../Screens/Questions";
+
 
 const {Navigator, Screen} = createNativeStackNavigator();
 
@@ -21,6 +23,10 @@ export function AuthRoutes(){
             <Screen 
                 name="Home"
                 component={Home}
+            />
+            <Screen
+                name="Questions"
+                component={Questions}
             />
         </Navigator>
     )

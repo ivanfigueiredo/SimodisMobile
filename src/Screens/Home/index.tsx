@@ -1,28 +1,32 @@
-import React from "react";
-import { Image, Text, View } from "react-native";
-import { ButtonForm } from "../../components/ButtonForm";
-import { ButtonVacina } from "../../components/ButtonVacina";
-import { styles } from "./styles";
-import dentro from '../../assets/Dentro.jpeg'
-import { ButtonRandom } from "../../components/ButtonAleatorio";
+import React, { useState } from 'react'
+import { View } from "react-native";
 
+
+import { ButtonAdd } from '../../components/ButtonAdd';
+import { CategorySelect } from '../../components/CategorySelect';
+import { Profile } from '../../components/Profile';
+
+import { styles } from "./styles";
 
 export function Home(){
+    const [category, setCategory] = useState('')
+
+    function handleCategorySelect(categoryId: string){
+        categoryId === category ? setCategory ('') : setCategory(categoryId);
+    }
+
     return(
-        <View style={styles.container}>
-            <Image 
-                source={dentro}
-                style={styles.image}
-            />
-            <ButtonForm
-                title= 'Formulario'
-            />
-            <ButtonVacina
-                title='Cartão de vacina'
-            />
-            <ButtonRandom 
-                title='Teste'
-            />
+        <View>
+            <View style={styles.header}>
+                <Profile />
+                <ButtonAdd />
+            </View>
+            <View>
+                <CategorySelect 
+                    categorySelected={category}
+                    setCategory={handleCategorySelect}
+                />                
+            </View>
         </View>
     )
 }

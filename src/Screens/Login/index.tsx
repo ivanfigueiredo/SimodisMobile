@@ -1,14 +1,13 @@
 import React from "react";
-import { Image, Text, View } from "react-native";
+import { Text, View } from "react-native";
 import { styles } from './styles'
-import LogoPNG from '../../assets/logo.png'
 import { Input } from "../../components/Input";
 import { ButtonEnter } from "../../components/ButtonEnter";
 import { useNavigation } from "@react-navigation/native";
 
 
-
-export function Login({navigation}){
+export const Login = () => {
+    const navigation = useNavigation ()
 
     function SignIn(){
         navigation.navigate('Home')
@@ -16,7 +15,6 @@ export function Login({navigation}){
 
     return(
         <View style={styles.container}>
-            <Image source={ LogoPNG } style={styles.logo} />
             <Text style={styles.matricula}>Matricula</Text>
             <Input />
             <Text style={styles.senha}>Senha</Text>

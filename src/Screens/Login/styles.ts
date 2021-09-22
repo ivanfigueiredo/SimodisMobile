@@ -11,11 +11,13 @@ export const styles = StyleSheet.create ({
     },
     matricula:{
         color: theme.colors.line,
-        marginRight: 180
+        marginRight: 180,
+        fontSize: 18
     },
     senha:{
         color: theme.colors.line,
         marginRight: 200,
-        marginTop: 10
+        marginTop: 10,
+        fontSize: 19
     },
 })
