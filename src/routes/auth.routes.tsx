@@ -6,6 +6,7 @@ import { Home } from "../Screens/Home";
 import { Login } from "../Screens/Login";
 import { Questions } from "../Screens/Questions";
 import { Perfil } from "../Screens/Perfil";
+import { Register } from "../Screens/Register";
 
 
 const {Navigator, Screen} = createNativeStackNavigator();
@@ -32,6 +33,10 @@ export function AuthRoutes(){
             <Screen
                 name="Perfil"
                 component={Perfil}
+            />
+            <Screen
+                name='Register'
+                component={Register}
             />
 
         </Navigator>

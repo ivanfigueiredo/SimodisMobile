@@ -4,13 +4,18 @@ import { styles } from './styles'
 import { Input } from "../../components/Input";
 import { ButtonEnter } from "../../components/ButtonEnter";
 import { useNavigation } from "@react-navigation/native";
+import { ButtonRegister } from "../../components/ButtonRegister";
 
 
 export const Login = () => {
     const navigation = useNavigation ()
 
-    function SignIn(){
+    function handleSignIn(){
         navigation.navigate('Home')
+    }
+
+    function handleRegistro(){
+        navigation.navigate('Register')
     }
 
     return(
@@ -21,7 +26,11 @@ export const Login = () => {
             <Input />
             <ButtonEnter
                 title='Entrar'
-                onPress={SignIn}
+                onPress={handleSignIn}
+            />
+            <ButtonRegister
+                title='Registrar'
+                onPress={handleRegistro}
             />
         </View>
     )
