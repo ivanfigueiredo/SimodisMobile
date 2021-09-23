@@ -35,7 +35,7 @@ export default function App(){
         backgroundColor="transparent"
         translucent
       />
-      <Perfil />
+      <Routes />
     </Background>
   )
 }

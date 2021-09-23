@@ -5,7 +5,6 @@ import { Avatar } from "../Avatar";
 
 
 
-
 export function Profile(){
     return (
         <View style={styles.container}>
