@@ -24,14 +24,18 @@ export const Login = () => {
             <Input />
             <Text style={styles.senha}>Senha</Text>
             <Input />
-            <ButtonEnter
-                title='Entrar'
-                onPress={handleSignIn}
-            />
-            <ButtonRegister
-                title='Registrar'
-                onPress={handleRegistro}
-            />
+            <View style={styles.containerButton}>
+                <View style={styles.Buttons}>
+                    <ButtonEnter
+                        title='Entrar'
+                        onPress={handleSignIn}
+                    />
+                    <ButtonRegister
+                        title='Registrar'
+                        onPress={handleRegistro}
+                    />
+                </View>    
+            </View>
         </View>
     )
 }

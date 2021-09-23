@@ -20,4 +20,15 @@ export const styles = StyleSheet.create ({
         marginTop: 10,
         fontSize: 19
     },
+    containerButton:{
+        flexDirection: 'row',
+        alignItems: 'center',
+        justifyContent: 'space-between'
+    },
+    Buttons:{
+        flexDirection: 'row',
+        width: '100%',
+        paddingHorizontal: 70,
+        justifyContent: 'space-between',
+    },
 })
