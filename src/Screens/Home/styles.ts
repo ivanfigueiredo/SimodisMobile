@@ -14,4 +14,10 @@ export const styles = StyleSheet.create({
         marginTop: getStatusBarHeight() + 26,
         marginBottom: 42
     },
+    content:{
+        flex: 1,
+        justifyContent: "center",
+        alignItems: "center",
+        marginTop: 300
+    }
 })

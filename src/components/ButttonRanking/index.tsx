@@ -4,23 +4,21 @@ import { View, Text, Image} from 'react-native'
 
 
 import { styles } from './styles'
-import Formulario from '../../assets/formulário1.png'
-
+import RankedSvg from '../../assets/ranked.svg'
 
 type Props = RectButtonProps & {
     title?: string
 }
 
 
-export function ButtonForm ({title, ...rest} : Props) {
+export function ButtonRanking ({title, ...rest} : Props) {
     return (
         <RectButton 
         style={styles.container}
         {...rest}
         >
-            <View style={styles.iconWrapper}>
-                <Image source={Formulario} style={styles.icon}/>
-            </View>
+
+            <RankedSvg />    
 
             <Text style={styles.title}>
                 {title}

@@ -26,13 +26,13 @@ export const Login = () => {
             <Input />
             <View style={styles.containerButton}>
                 <View style={styles.Buttons}>
+                    <ButtonRegister
+                        title='Registro'
+                        onPress={handleRegistro}
+                    />
                     <ButtonEnter
                         title='Entrar'
                         onPress={handleSignIn}
-                    />
-                    <ButtonRegister
-                        title='Registrar'
-                        onPress={handleRegistro}
                     />
                 </View>    
             </View>

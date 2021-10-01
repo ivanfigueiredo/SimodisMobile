@@ -2,9 +2,9 @@ import React from 'react'
 import { RectButton, RectButtonProps } from 'react-native-gesture-handler'
 import { View, Text, Image} from 'react-native'
 
-
+import {QuestionImage} from '../../assets/unnamed.png'
 import { styles } from './styles'
-import Formulario from '../../assets/formulário1.png'
+import FunSvg from '../../assets/fun.svg'
 
 
 type Props = RectButtonProps & {
@@ -12,16 +12,15 @@ type Props = RectButtonProps & {
 }
 
 
-export function ButtonRandom ({title, ...rest} : Props) {
+export function ButtonQuestions ({title, ...rest} : Props) {
     return (
         <RectButton 
         style={styles.container}
         {...rest}
-        >
-            <View style={styles.iconWrapper}>
-                <Image source={Formulario} style={styles.icon}/>
-            </View>
+        >  
 
+            <FunSvg />
+        
             <Text style={styles.title}>
                 {title}
             </Text>

@@ -1,12 +1,10 @@
-import RankedSvg from '../assets/ranked.svg'
 import DuelSvg from '../assets/duel.svg'
 import FunSvg from '../assets/fun.svg'
 import TrainingSvg from '../assets/training.svg'
 
 
 export const categories = [
-    {id: '1', title: 'Ranking', icon: RankedSvg},
-    {id: '2', title:'Desafios', icon: DuelSvg},
-    {id: '3', title:'Atividades', icon: FunSvg},
-    {id: '4', title:'Treino', icon: TrainingSvg},
+    {id: '1', title:'Desafios', icon: DuelSvg},
+    {id: '2', title:'Atividades', icon: FunSvg},
+    {id: '3', title:'Treino', icon: TrainingSvg},
 ]
