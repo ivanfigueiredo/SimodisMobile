@@ -2,10 +2,13 @@ import React from "react";
 import { Text, View } from "react-native";
 import { styles } from "./styles";
 import { Avatar } from "../Avatar";
+import { useNavigation } from "@react-navigation/native";
 
 
 
 export function Profile(){
+    
+
     return (
         <View style={styles.container}>
             <Avatar

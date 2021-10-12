@@ -6,6 +6,7 @@ import { ButtonEnter } from "../../components/ButtonEnter";
 import { useNavigation } from "@react-navigation/native";
 
 
+
 export function Questions() {
     const [value, setValue] = useState('')
 
@@ -24,7 +25,8 @@ export function Questions() {
                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque voluptatum quos, nobis voluptate culpa tempore sunt adipisci mollitia animi voluptatibus eum unde! Molestias necessitatibus, nemo beatae est inventore veritatis? Soluta?
                 </Text>
                 <RadioButton.Group onValueChange={newValue => setValue(newValue)} value={value}>
-                    <View style={{flexDirection: "row", alignItems: 'center'}}>
+
+                    <View style={{flexDirection: "row", alignItems: 'center', marginTop: 5}}>
                         <RadioButton value="first" />
                         <Text>First</Text>
                     </View>
@@ -48,8 +50,8 @@ export function Questions() {
                         <RadioButton value="Five" />
                         <Text>Five</Text>
                     </View>
-
                 </RadioButton.Group>
+
                 <View style={styles.FooterButton}>
                     <ButtonEnter title="Back" onPress={handleBack}/>
                     <ButtonEnter title="Next"/>

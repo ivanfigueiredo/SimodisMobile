@@ -1,13 +1,15 @@
 import React from "react";
-import { View, TextInput }  from 'react-native'
-import { styles } from "./styles";
+import { TextInput, TextInputProps } from "react-native"
+import { styles } from './styles'
+
+type Props = TextInputProps 
 
 
-
-export function InputRegister(){
+export function InputRegister({style,...rest}: Props){
     return(
-        <TextInput style={styles.container}>
-            
-        </TextInput>
+        <TextInput
+            {...rest}
+            style={[styles.container, style]}
+        />
     )
 }

@@ -12,6 +12,7 @@ import { Home } from "./src/Screens/Home";
 import { Routes } from "./src/routes";
 import { Register } from "./src/Screens/Register";
 import { Perfil } from "./src/Screens/Perfil";
+import { UserProvider } from "./src/context/userContext";
 
 
 
@@ -35,7 +36,10 @@ export default function App(){
         backgroundColor="transparent"
         translucent
       />
-      <Routes />
+      <UserProvider>
+        <Routes />
+      </UserProvider>
+      
     </Background>
   )
 }

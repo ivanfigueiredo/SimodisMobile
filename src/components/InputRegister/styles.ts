@@ -1,4 +1,5 @@
 import { StyleSheet } from "react-native";
+import { theme } from "../../global/styles/theme";
 
 export const styles = StyleSheet.create ({
     container:{
@@ -8,6 +9,6 @@ export const styles = StyleSheet.create ({
         height: 30,
         marginTop: 8,
         marginBottom: 5,
-        padding: 20
+        color: theme.colors.input
     },
 })

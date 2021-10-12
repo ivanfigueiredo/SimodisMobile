@@ -16,7 +16,7 @@ export const styles = StyleSheet.create({
     table:{
         width: '95%',
         paddingHorizontal: 20,
-        height: 400,
+        height: 500,
         borderRadius: 8,
         backgroundColor: theme.colors.heading
     },
@@ -27,6 +27,28 @@ export const styles = StyleSheet.create({
     FooterButton:{
         flexDirection: "row",
         justifyContent: 'space-between',
-        marginTop: -10
+        marginTop: 10
     },
 })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

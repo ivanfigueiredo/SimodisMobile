@@ -31,4 +31,13 @@ export const styles = StyleSheet.create ({
         paddingHorizontal: 70,
         justifyContent: 'space-between',
     },
+    input:{
+        backgroundColor: 'white', 
+        borderRadius: 10,
+        width: '65%',
+        height: 40,
+        marginTop: 8,
+        marginBottom: 5,
+        color: theme.colors.input
+    },
 })
