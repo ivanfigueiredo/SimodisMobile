@@ -16,11 +16,13 @@ export const styles = StyleSheet.create({
         color: theme.colors.highlight,
     },
     content:{
-        marginTop: 20,
+        width: '95%',
+        minHeight: 100,
+        padding: 20,
         borderRadius: 10,
         borderWidth: 1,
         borderColor: theme.colors.primary,
-        paddingRight: 300
+        
     },
     image:{
         backgroundColor: theme.colors.heading,
@@ -28,12 +30,12 @@ export const styles = StyleSheet.create({
         
     },
     title:{
-        alignSelf: 'flex-start',
-        fontSize: 20,
+        // alignSelf: 'flex-start',
+        fontSize: 18,
         color: theme.colors.primary,
-        fontFamily: theme.fonts.title500,
-        marginBottom: 10,
-        marginTop: 5,
-        marginLeft: 5
+        // fontFamily: theme.fonts.title500,
+        // marginBottom: 10,
+        // marginTop: 5,
+        // marginLeft: 5
     },
 })

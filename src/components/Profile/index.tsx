@@ -4,9 +4,12 @@ import { styles } from "./styles";
 import { Avatar } from "../Avatar";
 import { useNavigation } from "@react-navigation/native";
 
+type Props = {
+    email: string;
+    message: string,
+}
 
-
-export function Profile(){
+export function Profile({message, email }: Props){
     
 
     return (
@@ -22,11 +25,11 @@ export function Profile(){
                     </Text>
 
                     <Text style={styles.username}>
-                        Júlio
+                        {email}
                     </Text>
                 </View>
                 <Text style={styles.message}>
-                    Hoje é dia de vitória
+                    {message}
                 </Text>
             </View>
         </View>

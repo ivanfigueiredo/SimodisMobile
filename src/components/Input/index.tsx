@@ -13,3 +13,4 @@ export function Input ({style,...rest}: Props){
         />
     )
 }
+

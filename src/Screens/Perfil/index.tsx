@@ -6,7 +6,11 @@ import { AntDesign } from '@expo/vector-icons';
 
 
 
-export function Perfil(){
+export function Perfil({route}: any){
+    const {email} = route.params
+
+
+
     return (
         <View style={styles.container}>
             <View style={styles.header}>
@@ -17,7 +21,7 @@ export function Perfil(){
             </View>
             <View style={styles.content}>
                 <Text style={styles.title}>Matricula: </Text>
-                <Text style={styles.title}>Email: </Text>
+                <Text style={styles.title}>Email: {email} </Text>
                 <Text style={styles.title}>Curso: </Text>
             </View>
         </View>

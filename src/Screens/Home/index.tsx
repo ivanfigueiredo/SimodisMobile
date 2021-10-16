@@ -10,30 +10,36 @@ import { styles } from "./styles";
 import { ButtonQuestions } from '../../components/ButtonQuestions';
 import { ButtonRanking } from '../../components/ButttonRanking';
 
-export function Home({navigation}){
-    const [category, setCategory] = useState('')
+export function Home({route ,navigation}: any){
+    
 
-    function handleCategorySelect(categoryId: string){
-        categoryId === category ? setCategory ('') : setCategory(categoryId);
-    }
+    const { email } = route.params;
 
     function handleProfile(){
-        navigation.navigate('Perfil')
+        navigation.navigate('Perfil',{ 
+            email
+        })
     }
 
     function handleRanked(){
         navigation.navigate('Ranking')
     }
 
-    function handleQuestions(){
-        navigation.navigate('Questions')
+    function handleCourses(){
+        navigation.navigate('Courses')
     }
+
+
+    console.log(email)
 
 
     return(
         <View>
             <View style={styles.header}>
-                <Profile />
+                <Profile
+                    email={email}
+                    message='Hoje é dia de vitoria?'
+                />
                 <ButtonAdd
                     onPress={handleProfile}
                 />
@@ -44,8 +50,8 @@ export function Home({navigation}){
                     onPress={handleRanked}
                 />          
                 <ButtonQuestions
-                    title='Atividades'
-                    onPress={handleQuestions}
+                    title='Cursos'
+                    onPress={handleCourses}
                 /> 
             </View>
         </View>

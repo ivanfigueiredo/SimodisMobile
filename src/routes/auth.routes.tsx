@@ -8,6 +8,7 @@ import { Questions } from "../Screens/Questions";
 import { Perfil } from "../Screens/Perfil";
 import { Register } from "../Screens/Register";
 import { Ranking } from "../Screens/Ranking";
+import { Courses } from "../Screens/Courses";
 
 
 const {Navigator, Screen} = createNativeStackNavigator();
@@ -42,6 +43,10 @@ export function AuthRoutes(){
             <Screen
                 name='Ranking'
                 component={Ranking}
+            />
+            <Screen
+                name='Courses'
+                component={Courses}
             />
 
         </Navigator>
